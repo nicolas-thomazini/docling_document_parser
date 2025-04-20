@@ -1,0 +1,13 @@
+,Class-count,11,6,5,4
+0,Caption,68,Text,Text,Text
+1,Footnote,71,Text,Text,Text
+2,Formula,60,Text,Text,Text
+3,List-item,81,Text,82,Text
+4,Page-footer,62,62,-,-
+5,Page-header,72,68,-,-
+6,Picture,72,72,72,72
+7,Section-header,68,67,69,68
+8,Table,82,83,82,82
+9,Text,85,84,84,84
+10,Title,77,Sec.-h.,Sec.-h.,Sec.-h.
+11,Overall,72,73,78,77
