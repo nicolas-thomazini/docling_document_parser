@@ -12,6 +12,23 @@ Project for converting and extracting structured information from PDF documents 
 - Export text, tables, and images
 - Fully local (offline) execution
 
+## ⚙️ CPU vs GPU for PDF Processing
+
+The project runs by default on CPU, which is ideal for small files and quick tests. However, heavier tasks (such as batch OCR, TableFormer, and NLP) are significantly faster when using a GPU.
+
+**CPU**: easy to use, but slower for large volumes.  
+**GPU**: recommended for multiple PDFs, scanned OCR, and intensive AI tasks.
+
+**💡 Tip (Colab):**  
+If you don’t have a local GPU, you can run the project for free with hardware acceleration using **Google Colab**.
+
+- Open the notebook on Colab
+- Go to _Runtime > Change runtime type_
+- Select **GPU**
+- Run the notebook normally
+
+This ensures faster and more efficient execution without needing to install drivers or configure CUDA manually.
+
 ## 🧰 Requirements
 
 - Python 3.10+
@@ -79,6 +96,20 @@ Docling is an IBM library for layout analysis and structured document extraction
 ❌ Data format error when opening scanned PDFs: the file may be corrupted or improperly structured. Try using a different viewer or re-scan the document.
 
 ⚠️ Use of deprecated functions (export_to_html()...): you may need to explicitly pass the doc argument in future versions of the library.
+
+## 🛠️ TODO
+
+This project will soon be dockerized to improve portability and ease of execution.
+
+✅ What's planned:
+
+- Create a Dockerfile with a Python environment + Docling + OCR
+
+- Allow running the notebook inside the container
+
+- Support volumes for input/output of PDFs and JSONs
+
+- Run OCR + extraction with a single Docker command
 
 ## 📃 License
 
